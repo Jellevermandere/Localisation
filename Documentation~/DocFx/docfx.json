@@ -20,7 +20,7 @@
     ],
     "build": {
         "globalMetadata": {
-            "_appTitle": "Package",
+            "_appTitle": "Localisation",
             "_appFooter": "Jelle Vermandere",
             "_appLogoPath": "resources/logo.svg", 
             "_appFaviconPath": "resources/favicon.ico",
