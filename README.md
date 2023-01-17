@@ -5,23 +5,13 @@ A Unity Package to enable multiple languages in your game
  namespace JelleVer.Localisation
 ```
 
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Localisation](#localisation)
-  - [Installation](#installation)
-  - [Workflow](#workflow)
-    - [TextLocaliser](#textlocaliser)
-    - [LanguageSwitcher](#languageswitcher)
-  - [Licensing](#licensing)
-
-<!-- /code_chunk_output -->
-
 ## Installation
 
 This can be imported as a UnityPackage in any existing Unity project through the [Package manager](https://docs.unity3d.com/Manual/Packages.html) with the Git url.
+
+## Documentation
+
+You can find the full documentation here: [jellevermandere.github.io/Localisation](https://jellevermandere.github.io/Localisation)
 
 ## Workflow
 Using this package is pretty straightforward.

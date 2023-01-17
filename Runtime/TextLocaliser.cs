@@ -6,13 +6,19 @@ using TMPro;
 
 namespace JelleVer.Localisation
 {
+    /// <summary>
+    /// The class to change the key in the scene to localised values
+    /// </summary>
     public class TextLocaliser : MonoBehaviour
     {
+        /// <value> 
+        /// If the value should be updated at the start of the scene load.
+        /// </value>
         [SerializeField]
-        private bool UpdateAtStart = true;
+        public bool UpdateAtStart = true;
+
         private Text textObject;
         private TMP_Text tmpTextObject;
-
         private string localKey = "";
 
         // Start is called before the first frame update

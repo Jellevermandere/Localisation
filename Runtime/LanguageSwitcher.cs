@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace JelleVer.Localisation
 {
+    /// <summary>
+    /// Enables you to switch languages and update the scene
+    /// </summary>
     public class LanguageSwitcher : MonoBehaviour
     {
 
