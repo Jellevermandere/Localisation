@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JelleVer.Localisation.CSVLoader.html",
-          "hash": "Z4ObOA6r4L9OxQoG/JiQvgaAkAcK3J+5FJIYW9k3M1E="
+          "hash": "VyRrDnd3jBqC6KVO6wLboP+Le09cDp8pItpb5sN+sm8="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JelleVer.Localisation.LanguageSwitcher.html",
-          "hash": "cJNZSw/QyuNcSmgS0ZBgtJOMyMBzcfILYm5uU7NajPU="
+          "hash": "plYj1lMoVI6r24fau+Git7Wkwqx8uI/riPU7n+hNrAI="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JelleVer.Localisation.LocalisationManager.html",
-          "hash": "b/3nt9cVtTEw3SiCdwG5jmwluAuZUZIiV77mUqpZc7E="
+          "hash": "z1kSNLnV93M3m5/RPqVojZnwW7FSWiTiTjwohUHImBc="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JelleVer.Localisation.TextLocaliser.html",
-          "hash": "iqc5/gkU+9ufoSNV32GbKVYQMbeAZ1QeJKwZkwnObQQ="
+          "hash": "Mwq3e+laAONMzAc5pqjYW/0pU4w/33CJReXnxxSvDTk="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JelleVer.Localisation.html",
-          "hash": "Op0645vnRyOo7borF1CpriA71hAqQRsAvKaBDhS1op0="
+          "hash": "B7HQ/DslEPW5ohVX1XumVkNKBz6tXlZBmVLfdTCp9UE="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "APpjjjUVnTQnqgynICaO1UQDb82HqbGTnNXqWlV9W/k="
+          "hash": "ZQu0Kfdukhm6DTOI7mVOT9ZpagPigY0tVGqJDyAmt/M="
         }
       },
       "is_incremental": false,

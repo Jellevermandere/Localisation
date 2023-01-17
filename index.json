@@ -1,32 +1,32 @@
 {
   "api/JelleVer.Localisation.CSVLoader.html": {
     "href": "api/JelleVer.Localisation.CSVLoader.html",
-    "title": "Class CSVLoader | Package",
+    "title": "Class CSVLoader | Localisation",
     "keywords": "Class CSVLoader The loader class to parse a csv file. The localisation csv should be located @ \"Assets/Resources/localisation.csv\" Inheritance Object CSVLoader Inherited Members Object.ToString() Object.Equals(Object) Object.Equals(Object, Object) Object.ReferenceEquals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Namespace : JelleVer.Localisation Assembly : cs.temp.dll.dll Syntax public class CSVLoader Methods GetAllDictionaryValues() Gets all the languages and their key value pairs Declaration public Dictionary<string, string>[] GetAllDictionaryValues() Returns Type Description Dictionary < String , String >[] an array of dictionaries containing all the language pairs GetDictionaryValues(String) Parses the csv and gets the key value pair of a specified language Declaration public Dictionary<string, string> GetDictionaryValues(string attrbuteId) Parameters Type Name Description String attrbuteId The language id Returns Type Description Dictionary < String , String > a dictuinary containging the key value pairs LoadCSV() Loads the localisation csv into the class Declaration public void LoadCSV()"
   },
   "api/JelleVer.Localisation.html": {
     "href": "api/JelleVer.Localisation.html",
-    "title": "Namespace JelleVer.Localisation | Package",
+    "title": "Namespace JelleVer.Localisation | Localisation",
     "keywords": "Namespace JelleVer.Localisation Classes CSVLoader The loader class to parse a csv file. The localisation csv should be located @ \"Assets/Resources/localisation.csv\" LanguageSwitcher Enables you to switch languages and update the scene LocalisationManager Manages the localisation as a static class. TextLocaliser The class to change the key in the scene to localised values"
   },
   "api/JelleVer.Localisation.LanguageSwitcher.html": {
     "href": "api/JelleVer.Localisation.LanguageSwitcher.html",
-    "title": "Class LanguageSwitcher | Package",
+    "title": "Class LanguageSwitcher | Localisation",
     "keywords": "Class LanguageSwitcher Enables you to switch languages and update the scene Inheritance Object LanguageSwitcher Namespace : JelleVer.Localisation Assembly : cs.temp.dll.dll Syntax public class LanguageSwitcher : MonoBehaviour Methods ChangeLanguage() Change the language to the next in line, also changes all the text values in the scene to match the current language. Declaration public void ChangeLanguage()"
   },
   "api/JelleVer.Localisation.LocalisationManager.html": {
     "href": "api/JelleVer.Localisation.LocalisationManager.html",
-    "title": "Class LocalisationManager | Package",
+    "title": "Class LocalisationManager | Localisation",
     "keywords": "Class LocalisationManager Manages the localisation as a static class. Inheritance Object LocalisationManager Namespace : JelleVer.Localisation Assembly : cs.temp.dll.dll Syntax public class LocalisationManager : MonoBehaviour Methods ChangeLanguage() Changes the language to the next in line, looping over every language Declaration public static string ChangeLanguage() Returns Type Description String The current language string GetCurrentLanguage() Get the current language string Declaration public static string GetCurrentLanguage() Returns Type Description String The string of the current active language. GetLocalisedValue(String) returns a localised value of a given key, throws warning if not found Declaration public static string GetLocalisedValue(string key) Parameters Type Name Description String key Returns Type Description String the correct value of the current language, returns empty if key is empty UpdateDictionaries() Parses the Localisation csv. Declaration public static void UpdateDictionaries()"
   },
   "api/JelleVer.Localisation.TextLocaliser.html": {
     "href": "api/JelleVer.Localisation.TextLocaliser.html",
-    "title": "Class TextLocaliser | Package",
+    "title": "Class TextLocaliser | Localisation",
     "keywords": "Class TextLocaliser The class to change the key in the scene to localised values Inheritance Object TextLocaliser Namespace : JelleVer.Localisation Assembly : cs.temp.dll.dll Syntax public class TextLocaliser : MonoBehaviour Fields UpdateAtStart Declaration public bool UpdateAtStart Field Value Type Description Boolean If the value should be updated at the start of the scene load. Methods UpdateText(String) Set the text component to a localised value Declaration public void UpdateText(string key = \"\") Parameters Type Name Description String key the localisation key to search for the correct value"
   },
   "index.html": {
     "href": "index.html",
-    "title": "Localisation | Package",
+    "title": "Localisation | Localisation",
     "keywords": "Localisation A Unity Package to enable multiple languages in your game namespace JelleVer.Localisation Installation This can be imported as a UnityPackage in any existing Unity project through the Package manager with the Git url. Documentation You can find the full documentation here: jellevermandere.github.io/Localisation Workflow Using this package is pretty straightforward. You need a localisation.csv file in your Resources folder according to this layout: \"key\",\"EN\",\"NL\",... \"ID_Example_1\",\"valueEN1\",\"valueNL1\",... \"ID_Example_2\",\"valueEN2\",\"valueNL2\",... ... You can freely add any number of languages, the system will automatically detect all the languages. TextLocaliser Each Text of TMP_Text object you then want to have translated needs a TextLocaliser component, where the text value in the component will be used to find the correct translation in the .csv. Once the level starts, the value will be updated. You can also update the value at runtime using: public void UpdateText(string key = \"\"){ } LanguageSwitcher If you want to switch to a different language, you can do so using the LanguageSwitcher with the function: public void ChangeLanguage(){ } This toggles the current language to the next one in the list and updates all the active TextLocaliser objects. Licensing The code in this project is licensed under MIT license."
   }
 }
