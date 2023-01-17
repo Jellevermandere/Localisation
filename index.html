@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Localisation | Package </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Localisation | Package ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="resources/favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="api/JelleVer.Localisation.html" title="Scripting API">Scripting API</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="localisation">Localisation</h1>
+
+<p>A Unity Package to enable multiple languages in your game</p>
+<pre><code class="lang-cs"> namespace JelleVer.Localisation
+</code></pre><!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+<ul>
+<li><a href="#localisation">Localisation</a><ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#workflow">Workflow</a><ul>
+<li><a href="#textlocaliser">TextLocaliser</a></li>
+<li><a href="#languageswitcher">LanguageSwitcher</a></li>
+</ul>
+</li>
+<li><a href="#licensing">Licensing</a></li>
+</ul>
+</li>
+</ul>
+<!-- /code_chunk_output -->
+<h2 id="installation">Installation</h2>
+<p>This can be imported as a UnityPackage in any existing Unity project through the <a href="https://docs.unity3d.com/Manual/Packages.html">Package manager</a> with the Git url.</p>
+<h2 id="workflow">Workflow</h2>
+<p>Using this package is pretty straightforward.
+You need a <code>localisation.csv</code> file in your <code>Resources</code> folder according to this layout:</p>
+<pre><code class="lang-csv">&quot;key&quot;,&quot;EN&quot;,&quot;NL&quot;,...
+&quot;ID_Example_1&quot;,&quot;valueEN1&quot;,&quot;valueNL1&quot;,...
+&quot;ID_Example_2&quot;,&quot;valueEN2&quot;,&quot;valueNL2&quot;,...
+...
+</code></pre><p>You can freely add any number of languages, the system will automatically detect all the languages.</p>
+<h3 id="textlocaliser">TextLocaliser</h3>
+<p>Each Text of TMP_Text object you then want to have translated needs a <code>TextLocaliser</code> component, where the text value in the component will be used to find the correct translation in the .csv. 
+Once the level starts, the value will be updated. You can also update the value at runtime using:</p>
+<pre><code class="lang-cs">public void UpdateText(string key = &quot;&quot;){ }
+</code></pre><h3 id="languageswitcher">LanguageSwitcher</h3>
+<p>If you want to switch to a different language, you can do so using the <code>LanguageSwitcher</code>with the function:</p>
+<pre><code class="lang-cs">public void ChangeLanguage(){ }
+</code></pre><p>This toggles the current language to the next one in the list and updates all the active <code>TextLocaliser</code> objects.</p>
+<h2 id="licensing">Licensing</h2>
+<p>The code in this project is licensed under MIT license.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Jellevermandere/Localisation/blob/main/Documentation~/DocFx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Jelle Vermandere
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
