@@ -135,6 +135,12 @@ references:
   commentId: T:JelleVer.Localisation.TextLocaliser
   fullName: JelleVer.Localisation.TextLocaliser
   nameWithType: TextLocaliser
+- uid: JelleVer.Localisation.TextLocaliser.UpdateAtStart
+  name: UpdateAtStart
+  href: api/JelleVer.Localisation.TextLocaliser.html#JelleVer_Localisation_TextLocaliser_UpdateAtStart
+  commentId: F:JelleVer.Localisation.TextLocaliser.UpdateAtStart
+  fullName: JelleVer.Localisation.TextLocaliser.UpdateAtStart
+  nameWithType: TextLocaliser.UpdateAtStart
 - uid: JelleVer.Localisation.TextLocaliser.UpdateText(System.String)
   name: UpdateText(String)
   href: api/JelleVer.Localisation.TextLocaliser.html#JelleVer_Localisation_TextLocaliser_UpdateText_System_String_
