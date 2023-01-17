@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-612,-1224)">
+        <g id="Pencil-Logo" serif:id="Pencil Logo" transform="matrix(1.80622,0,0,1.80622,612,1224)">
+            <rect x="0" y="0" width="283.465" height="283.465" style="fill:none;"/>
+            <g id="Pencil-Logo1" serif:id="Pencil Logo" transform="matrix(1.04924,0,0,1.04924,-6.00819,-8.29097)">
+                <g transform="matrix(1,0,0,1,156.518,186.449)">
+                    <path d="M0,-80.252L-115.867,35.615L-122.534,28.948C-128.687,22.796 -128.687,12.82 -122.534,6.668L0,-115.867C9.835,-106.032 9.835,-90.087 0,-80.252" style="fill:rgb(235,121,76);fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,214.689,247.605)">
+                    <path d="M0,-118.852L-122.534,3.682C-128.687,9.835 -138.662,9.835 -144.814,3.682L-151.482,-2.986L-35.615,-118.852C-25.78,-128.687 -9.835,-128.687 0,-118.852" style="fill:rgb(235,121,76);fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(-0.659425,0.75177,0.75177,0.659425,236.955,55.1513)">
+                    <path d="M35.756,-32.048C41.081,-19.637 26.253,-12.943 26.03,-6.395C25.79,0.602 40.888,5.118 35.756,15.979L-9.29,-4.685L35.756,-32.048Z" style="fill:rgb(235,121,76);fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

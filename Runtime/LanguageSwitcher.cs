@@ -8,6 +8,9 @@ namespace JelleVer.Localisation
     public class LanguageSwitcher : MonoBehaviour
     {
 
+        /// <summary>
+        /// Change the language to the next in line, also changes all the text values in the scene to match the current language.
+        /// </summary>
         public void ChangeLanguage()
         {
             LocalisationManager.ChangeLanguage();

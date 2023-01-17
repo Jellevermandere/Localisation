@@ -4,16 +4,18 @@ using UnityEngine;
 
 namespace JelleVer.Localisation
 {
-
+    /// <summary>
+    /// Manages the localisation as a static class.
+    /// </summary>
     public class LocalisationManager : MonoBehaviour
     {
         private static int currentLanguage = 0;
         private static string currentLanguageString = "";
-        private static List<Dictionary<string, string>> localisedStrings = new List<Dictionary<string, string>>();
-        public static CSVLoader csvLoader;
-        public static bool isInit;
+        private static Dictionary<string, string>[] localisedStrings;
+        private static CSVLoader csvLoader;
+        private static bool isInit;
 
-        public static void Init()
+        private static void Init()
         {
             csvLoader = new CSVLoader();
             csvLoader.LoadCSV();
@@ -22,12 +24,30 @@ namespace JelleVer.Localisation
             isInit = true;
         }
 
-        public static void ChangeLanguage()
+        /// <summary>
+        /// Changes the language to the next in line, looping over every language
+        /// </summary>
+        /// <returns>The current language string</returns>
+        public static string ChangeLanguage()
         {
-            currentLanguage = (currentLanguage + 1) % localisedStrings.Count;
+            if (!isInit) Init();
+            currentLanguage = (currentLanguage + 1) % localisedStrings.Length;
             localisedStrings[currentLanguage].TryGetValue("LA", out currentLanguageString);
+            return currentLanguageString;
         }
 
+        /// <summary>
+        /// Get the current language string
+        /// </summary>
+        /// <returns>The string of the current active language.</returns>
+        public static string GetCurrentLanguage()
+        {
+            return currentLanguageString;
+        }
+
+        /// <summary>
+        /// Parses the Localisation csv.
+        /// </summary>
         public static void UpdateDictionaries()
         {
             localisedStrings = csvLoader.GetAllDictionaryValues();
@@ -54,63 +74,5 @@ namespace JelleVer.Localisation
             }
             return value;
         }
-
-        public static string GetCurrentLanguage()
-        {
-            return currentLanguageString;
-        }
-
-#if UNITY_EDITOR
-        public static void Add(string key, string valueNL, string valueEN)
-        {
-            if (valueNL.Contains("\""))
-            {
-                valueNL.Replace('"', '\"');
-            }
-            if (valueEN.Contains("\""))
-            {
-                valueEN.Replace('"', '\"');
-            }
-
-            if (csvLoader == null) csvLoader = new CSVLoader();
-
-            csvLoader.LoadCSV();
-            csvLoader.Add(key, valueNL, valueEN);
-            csvLoader.LoadCSV();
-
-            UpdateDictionaries();
-        }
-
-        public static void Edit(string key, string valueNL, string valueEN)
-        {
-            if (valueNL.Contains("\""))
-            {
-                valueNL.Replace('"', '\"');
-            }
-            if (valueEN.Contains("\""))
-            {
-                valueEN.Replace('"', '\"');
-            }
-
-            if (csvLoader == null) csvLoader = new CSVLoader();
-
-            csvLoader.LoadCSV();
-            csvLoader.Edit(key, valueNL, valueEN);
-            csvLoader.LoadCSV();
-
-            UpdateDictionaries();
-        }
-        public static void Remove(string key)
-        {
-            if (csvLoader == null) csvLoader = new CSVLoader();
-
-            csvLoader.LoadCSV();
-            csvLoader.Remove(key);
-            csvLoader.LoadCSV();
-
-            UpdateDictionaries();
-        }
-#endif
-
     }
 }

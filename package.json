@@ -1,6 +1,6 @@
 {
     "name": "be.jellever.localisation",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "displayName": "Localisation",
     "description": "Tools to enable multiple languages in your game",
     "dependencies": {},
